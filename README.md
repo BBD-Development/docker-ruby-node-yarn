@@ -20,11 +20,11 @@ There will be multiple variants of tag version to assist with selecting a specif
 
 The Ruby, Node and Yarn dependencies will be seperated by a `-` and will be used in the following order: `RUBY-NODE-YARN`
 
-Example of using Ruby `2.5.8`, with Node `8.17.0` and Yarn `1.21.1`
+Example of using Ruby `2.5.8`, with Node `8.17.0` and Yarn `1.22.4` would be: `2.5.8-8.17.0-1.22.4`
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`latest`, `2.5.8-8.17.0-1.21.1`, `2.5.7-8.16.2-1.19.1` (2.5-8/Dockerfile)](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.5-8/buster/Dockerfile)
+- [`latest`, `2.5.8-8.17.0-1.22.4` (2.5-8/Dockerfile)](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.5-8/buster/Dockerfile)
 
 ## Image Variants
 
