@@ -1,4 +1,4 @@
-FROM ruby:2.5.7
+FROM ruby:2.5.8
 RUN apt-get update -qq && apt-get install -y build-essential
 
 # for postgres
@@ -19,7 +19,7 @@ ENV LANG=C.UTF-8 \
 RUN groupadd --gid 1000 node \
   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
 
-ENV NODE_VERSION=8.16.2
+ENV NODE_VERSION=8.17.0
 
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
   && case "${dpkgArch##*-}" in \
@@ -63,7 +63,7 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
   && npm --version
 
 
-ENV YARN_VERSION=1.19.1
+ENV YARN_VERSION=1.21.1
 
 RUN set -ex \
   && for key in \
