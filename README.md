@@ -6,10 +6,12 @@ Based on the official Ruby image. Node and Yarn will be installed on top using t
 
 Maintaned combinations:
 
-- Ruby: 2.6       |    Node: 8.x    |    Yarn: >=1.22
-- Ruby: 2.5 (EOL) |    Node: 8.x    |    Yarn: >=1.19
+| Ruby          | Node          | Yarn          | Status                |
+| ------------- | ------------- | ------------- | --------------------- |
+| ~~`2.6.x`~~   | ~~`8.x`~~     | ~~`>=1.22`~~  | EOL: 2022-03-31       |
+| ~~`2.5.x`~~   | ~~`8.x`~~     | ~~`>=1.19`~~  | EOL: 2021-03-31       |
 
-Note: More current versions of Ruby and Node will be added later...
+Note: More current versions of Ruby and Node will be added later.
 
 ## Why Node.js and Ruby together?
 
