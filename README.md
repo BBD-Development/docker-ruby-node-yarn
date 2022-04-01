@@ -4,10 +4,11 @@ Docker image with Ruby and Node.js with Yarn installed.
 
 Based on the official Ruby image. Node and Yarn will be installed on top using the same approach from their official images.
 
-Maintaned combinations:
+Maintained combinations:
 
 | Ruby          | Node          | Yarn          | Status                |
 | ------------- | ------------- | ------------- | --------------------- |
+| `2.7.x`       | `8.x`         | `>=1.22`      | normal maintenance    |
 | ~~`2.6.x`~~   | ~~`8.x`~~     | ~~`>=1.22`~~  | EOL: 2022-03-31       |
 | ~~`2.5.x`~~   | ~~`8.x`~~     | ~~`>=1.19`~~  | EOL: 2021-03-31       |
 
@@ -23,21 +24,19 @@ There will be multiple variants of the tag versions to assist with selecting a s
 
 The Ruby, Node, and Yarn dependencies will be separated by a `-` and will be used in the following order: `RUBY-NODE-YARN`
 
-An example of using Ruby `2.6.9`, with Node `8.17.0` and Yarn `1.22.4` would be: `2.6.9-8.17.0-1.22.4`
+An example of using Ruby `2.7.0`, with Node `8.17.0` and Yarn `1.22.4` would be: `2.7.0-8.17.0-1.22.4`
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`latest`, `2.6.9-8.17.0-1.22.4` (2.6/Dockerfile)](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.6/buster/Dockerfile)
-- [`2.5.8-8.17.0-1.22.4` (2.5-8/Dockerfile)](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.5-8/buster/Dockerfile)
+- [`latest`, `2.7.0-8.17.0-1.22.4` (2.7/Dockerfile)](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7/buster/Dockerfile)
 
 ## Image Variants
 
-The `bbdinc/ruby-node-yarn` images come in two flavors: `debian` and `alpine`.
+The `bbdinc/ruby-node-yarn` images come in following flavors:
 
 - `debian (buster)`
-- `alpine`
 
-Note: `stretch` and `slim` might come eventually later.
+Note: `alpine`,`stretch` and `slim` might come later.
 
 ## Default Locale
 
@@ -55,11 +54,11 @@ This image uses `C.UTF-8` instead of the default `POSIX`.
 - Commit locally as one commit and indicate which versions have changed in the commit message
 - Build the Docker changes locally and tag it the same way as you want it on docker but exclude the organization.
     ```
-    docker build -f 2.6/buster/Dockerfile -t ruby-node-yarn:2.6.9-8.17.0-1.22.4 .
+    docker build -f 2.7/buster/Dockerfile -t ruby-node-yarn:2.7.0-8.17.0-1.22.4 .
     ```
 - Tag the commit with the same Docker tag that is being added (don't push yet)
     ```
-    git tag 2.6.9-8.17.0-1.22.4
+    git tag 2.7.0-8.17.0-1.22.4
     ```
 - If the build succeeds, then push your local Git repo with the pending commit/tag to the remote master branch
     ```
@@ -69,13 +68,13 @@ This image uses `C.UTF-8` instead of the default `POSIX`.
     ```
     docker images
     REPOSITORY                    TAG                   IMAGE ID
-    ruby-node-yarn                2.6.9-8.17.0-1.22.4   96f404a7279a
+    ruby-node-yarn                2.7.0-8.17.0-1.22.4   5b4036f6a6cb
 
-    docker tag 96f404a7279a bbdinc/ruby-node-yarn:2.6.9-8.17.0-1.22.4
-    docker tag 96f404a7279a bbdinc/ruby-node-yarn:latest
+    docker tag 5b4036f6a6cb bbdinc/ruby-node-yarn:2.7.0-8.17.0-1.22.4
+    docker tag 5b4036f6a6cb bbdinc/ruby-node-yarn:latest
     ```
 - Final step, is to push the Docker tags to Dockerhub. Reminder, ensure you are logged into Dockerhub hub locally before attempting to push using [docker login](https://docs.docker.com/engine/reference/commandline/login/)
     ```
-    docker push bbdinc/ruby-node-yarn:2.6.9-8.17.0-1.22.4
+    docker push bbdinc/ruby-node-yarn:2.7.0-8.17.0-1.22.4
     docker push bbdinc/ruby-node-yarn:latest
     ```
