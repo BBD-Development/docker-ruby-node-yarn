@@ -24,11 +24,11 @@ There will be multiple variants of the tag versions to assist with selecting a s
 
 The Ruby, Node, and Yarn dependencies will be separated by a `-` and will be used in the following order: `RUBY-NODE-YARN`
 
-An example of using Ruby `2.7.4`, with Node `8.17.0` and Yarn `1.22.4` would be: `2.7.4-8.17.0-1.22.4`
+An example of using Ruby `2.7.5`, with Node `8.17.0` and Yarn `1.22.4` would be: `2.7.5-8.17.0-1.22.4`
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`latest`, `2.7.4-8.17.0-1.22.4` (2.7/Dockerfile)](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7/buster/Dockerfile)
+- [`latest`, `2.7.5-8.17.0-1.22.4` (2.7/Dockerfile)](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7/buster/Dockerfile)
 
 ## Image Variants
 
@@ -54,11 +54,11 @@ This image uses `C.UTF-8` instead of the default `POSIX`.
 3. Commit locally as one commit and indicate which versions have changed in the commit message
 4. Build the Docker changes locally and tag it the same way as you want it on docker but exclude the organization.
     ```
-    docker build -f 2.7/buster/Dockerfile -t ruby-node-yarn:2.7.4-8.17.0-1.22.4 .
+    docker build -f 2.7/buster/Dockerfile -t ruby-node-yarn:2.7.5-8.17.0-1.22.4 .
     ```
 5. Tag the commit with the same Docker tag that is being added (don't push yet)
     ```
-    git tag 2.7.4-8.17.0-1.22.4
+    git tag 2.7.5-8.17.0-1.22.4
     ```
 6. If the build succeeds, then push your local Git repo with the pending commit/tag to the remote master branch
     ```
@@ -68,13 +68,13 @@ This image uses `C.UTF-8` instead of the default `POSIX`.
     ```
     docker images
     REPOSITORY                    TAG                   IMAGE ID
-    ruby-node-yarn                2.7.4-8.17.0-1.22.4   767d1076c767
+    ruby-node-yarn                2.7.5-8.17.0-1.22.4   c8613a5d909f
 
-    docker tag 767d1076c767 bbdinc/ruby-node-yarn:2.7.4-8.17.0-1.22.4
-    docker tag 767d1076c767 bbdinc/ruby-node-yarn:latest
+    docker tag c8613a5d909f bbdinc/ruby-node-yarn:2.7.5-8.17.0-1.22.4
+    docker tag c8613a5d909f bbdinc/ruby-node-yarn:latest
     ```
 8. Final step, is to push the Docker tags to Dockerhub. Reminder, ensure you are logged into Dockerhub hub locally before attempting to push using [docker login](https://docs.docker.com/engine/reference/commandline/login/)
     ```
-    docker push bbdinc/ruby-node-yarn:2.7.4-8.17.0-1.22.4
+    docker push bbdinc/ruby-node-yarn:2.7.5-8.17.0-1.22.4
     docker push bbdinc/ruby-node-yarn:latest
     ```
