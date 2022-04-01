@@ -24,11 +24,11 @@ There will be multiple variants of the tag versions to assist with selecting a s
 
 The Ruby, Node, and Yarn dependencies will be separated by a `-` and will be used in the following order: `RUBY-NODE-YARN`
 
-An example of using Ruby `2.7.0`, with Node `8.17.0` and Yarn `1.22.4` would be: `2.7.0-8.17.0-1.22.4`
+An example of using Ruby `2.7.1`, with Node `8.17.0` and Yarn `1.22.4` would be: `2.7.1-8.17.0-1.22.4`
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`latest`, `2.7.0-8.17.0-1.22.4` (2.7/Dockerfile)](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7/buster/Dockerfile)
+- [`latest`, `2.7.1-8.17.0-1.22.4` (2.7/Dockerfile)](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7/buster/Dockerfile)
 
 ## Image Variants
 
@@ -49,32 +49,32 @@ This image uses `C.UTF-8` instead of the default `POSIX`.
 
 ## Release Process
 
-- Update the specific Dockerfile with required dependency updates.
-- Update the README's Supported tags and any other documentation required.
-- Commit locally as one commit and indicate which versions have changed in the commit message
-- Build the Docker changes locally and tag it the same way as you want it on docker but exclude the organization.
+1. Update the specific Dockerfile with required dependency updates.
+2. Update the README's Supported tags and any other documentation required.
+3. Commit locally as one commit and indicate which versions have changed in the commit message
+4. Build the Docker changes locally and tag it the same way as you want it on docker but exclude the organization.
     ```
-    docker build -f 2.7/buster/Dockerfile -t ruby-node-yarn:2.7.0-8.17.0-1.22.4 .
+    docker build -f 2.7/buster/Dockerfile -t ruby-node-yarn:2.7.1-8.17.0-1.22.4 .
     ```
-- Tag the commit with the same Docker tag that is being added (don't push yet)
+5. Tag the commit with the same Docker tag that is being added (don't push yet)
     ```
-    git tag 2.7.0-8.17.0-1.22.4
+    git tag 2.7.1-8.17.0-1.22.4
     ```
-- If the build succeeds, then push your local Git repo with the pending commit/tag to the remote master branch
+6. If the build succeeds, then push your local Git repo with the pending commit/tag to the remote master branch
     ```
     git push --tags origin master
     ```
-- Then list the local [docker images](https://docs.docker.com/engine/reference/commandline/images/) to get the docker image id and perform a [docker tag](https://docs.docker.com/engine/reference/commandline/tag/) using the Image ID and include the Organization this time.
+7. Then list the local [docker images](https://docs.docker.com/engine/reference/commandline/images/) to get the docker image id and perform a [docker tag](https://docs.docker.com/engine/reference/commandline/tag/) using the Image ID and include the Organization this time.
     ```
     docker images
     REPOSITORY                    TAG                   IMAGE ID
-    ruby-node-yarn                2.7.0-8.17.0-1.22.4   5b4036f6a6cb
+    ruby-node-yarn                2.7.1-8.17.0-1.22.4   89836f4dc5b1
 
-    docker tag 5b4036f6a6cb bbdinc/ruby-node-yarn:2.7.0-8.17.0-1.22.4
-    docker tag 5b4036f6a6cb bbdinc/ruby-node-yarn:latest
+    docker tag 89836f4dc5b1 bbdinc/ruby-node-yarn:2.7.1-8.17.0-1.22.4
+    docker tag 89836f4dc5b1 bbdinc/ruby-node-yarn:latest
     ```
-- Final step, is to push the Docker tags to Dockerhub. Reminder, ensure you are logged into Dockerhub hub locally before attempting to push using [docker login](https://docs.docker.com/engine/reference/commandline/login/)
+8. Final step, is to push the Docker tags to Dockerhub. Reminder, ensure you are logged into Dockerhub hub locally before attempting to push using [docker login](https://docs.docker.com/engine/reference/commandline/login/)
     ```
-    docker push bbdinc/ruby-node-yarn:2.7.0-8.17.0-1.22.4
+    docker push bbdinc/ruby-node-yarn:2.7.1-8.17.0-1.22.4
     docker push bbdinc/ruby-node-yarn:latest
     ```
