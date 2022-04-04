@@ -38,10 +38,6 @@ The `bbdinc/ruby-node-yarn` images come in following flavors:
 
 Note: `alpine`,`stretch` and `slim` might come later.
 
-## Default Locale
-
-This image uses `C.UTF-8` instead of the default `POSIX`.
-
 ## Ruby, Node and Yarn Release Versions
 - [Ruby Releases](https://www.ruby-lang.org/en/downloads/releases/)
 - [Node Releases](https://nodejs.org/en/download/releases/)
@@ -68,10 +64,10 @@ This image uses `C.UTF-8` instead of the default `POSIX`.
     ```
     docker images
     REPOSITORY                    TAG                   IMAGE ID
-    ruby-node-yarn                2.7.5-8.17.0-1.22.4   c8613a5d909f
+    ruby-node-yarn                2.7.5-8.17.0-1.22.4   4596e277b67a
 
-    docker tag c8613a5d909f bbdinc/ruby-node-yarn:2.7.5-8.17.0-1.22.4
-    docker tag c8613a5d909f bbdinc/ruby-node-yarn:latest
+    docker tag 4596e277b67a bbdinc/ruby-node-yarn:2.7.5-8.17.0-1.22.4
+    docker tag 4596e277b67a bbdinc/ruby-node-yarn:latest
     ```
 8. Final step, is to push the Docker tags to Dockerhub. Reminder, ensure you are logged into Dockerhub hub locally before attempting to push using [docker login](https://docs.docker.com/engine/reference/commandline/login/)
     ```
