@@ -28,7 +28,7 @@ An example of using Ruby `2.7.5`, with Node `8.17.0` and Yarn `1.22.4` would be:
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`latest`, `2.7.5-8.17.0-1.22.4` (2.7/Dockerfile)](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7/buster/Dockerfile)
+- [`latest`, `2.7.5-8.17.0-1.22.4` (2.7-8/Dockerfile)](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-8/buster/Dockerfile)
 
 ## Image Variants
 
