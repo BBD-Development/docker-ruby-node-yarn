@@ -31,7 +31,7 @@ An example of using Ruby `2.7.5`, with Node `12.22.11` and Yarn `1.22.4` would b
 - [`2.7.5-12.22.11-1.22.4`, `latest`](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-12/buster/Dockerfile)
 - [`2.7.5-11.15.0-1.22.4`](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-11/buster/Dockerfile)
 - [`2.7.5-10.24.1-1.22.4`](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-10/buster/Dockerfile)
-- [`2.7.5-9.11.2-1.22.4`](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-9/buster/Dockerfile)
+- [`2.7.6-9.11.2-1.22.4`, `2.7.5-9.11.2-1.22.4`](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-9/buster/Dockerfile)
 - [`2.7.6-8.17.0-1.22.4`, `2.7.5-8.17.0-1.22.4`, `2.7.4-8.17.0-1.22.4`, `2.7.3-8.17.0-1.22.4`,`2.7.2-8.17.0-1.22.4`, `2.7.1-8.17.0-1.22.4`](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-8/buster/Dockerfile)
 
 ## Image Variants
