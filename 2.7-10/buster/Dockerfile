@@ -46,7 +46,7 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
   && npm --version
 
 
-ENV YARN_VERSION=1.22.5
+ENV YARN_VERSION=1.22.19
 
 RUN set -ex \
   && for key in \
