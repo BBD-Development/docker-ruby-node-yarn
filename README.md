@@ -6,11 +6,18 @@ Based on the official Ruby image. Node and Yarn will be installed on top using t
 
 Maintained combinations:
 
-| Ruby          | Node                                                         | Yarn          | Status                |
-| ------------- | ------------------------------------------------------------ | ------------- | --------------------- |
-| `2.7.x`       | `8.x`,`9.x`,`10.x`,`11.x`,`12.x`,`13.x`,`14.x`,`15.x`,`16.x` | `>=1.22`      | normal maintenance    |
-| ~~`2.6.x`~~   | ~~`8.x`~~                                                    | ~~`>=1.22`~~  | Ruby EOL: 2022-03-31  |
-| ~~`2.5.x`~~   | ~~`8.x`~~                                                    | ~~`>=1.19`~~  | Ruby EOL: 2021-03-31  |
+| Ruby          | Node                          | Yarn          | Status                     |
+| ------------- | ----------------------------- | ------------- | -------------------------- |
+| `2.7.x`       | `14.x`,`16.x`                 | `>=1.22`      | normal maintenance         |
+| `2.7.x`       | ~~`15.x`~~                    | `>=1.22`      | Node 15.x EOL: 2021-06-01  |
+| `2.7.x`       | ~~`13.x`~~                    | `>=1.22`      | Node 13.x EOL: 2020-06-01  |
+| `2.7.x`       | ~~`12.x`~~                    | `>=1.22`      | Node 12.x EOL: 2022-04-30  |
+| `2.7.x`       | ~~`11.x`~~                    | `>=1.22`      | Node 11.x EOL: 2019-06-01  |
+| `2.7.x`       | ~~`10.x`~~                    | `>=1.22`      | Node 10.x EOL: 2021-04-30  |
+| `2.7.x`       | ~~`9.x`~~                     | `>=1.22`      | Node 9.x EOL: 2018-06-30   |
+| `2.7.x`       | ~~`8.x`~~                     | `>=1.22`      | Node 8.x EOL: 2019-12-31   |
+| ~~`2.6.x`~~   | ~~`8.x`~~                     | ~~`>=1.22`~~  | Ruby 2.6x EOL: 2022-03-31  |
+| ~~`2.5.x`~~   | ~~`8.x`~~                     | ~~`>=1.19`~~  | Ruby 2.5x EOL: 2021-03-31  |
 
 Note: More current versions of Ruby and Node will be added later.
 
@@ -29,14 +36,7 @@ An example of using Ruby `2.7.6`, with Node `16.17.0` and Yarn `1.22.4` would be
 ## Supported tags and respective `Dockerfile` links
 
 - [`2.7.6-16.17.0-1.22.4`, `latest`](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-16/buster/Dockerfile)
-- [`2.7.6-15.14.0-1.22.4`](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-15/buster/Dockerfile)
 - [`2.7.6-14.20.0-1.22.4`](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-14/buster/Dockerfile)
-- [`2.7.6-13.14.0-1.22.4`](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-13/buster/Dockerfile)
-- [`2.7.6-12.22.11-1.22.4`, `2.7.5-12.22.11-1.22.4`](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-12/buster/Dockerfile)
-- [`2.7.6-11.15.0-1.22.4`, `2.7.5-11.15.0-1.22.4`](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-11/buster/Dockerfile)
-- [`2.7.6-10.24.1-1.22.4`, `2.7.5-10.24.1-1.22.4`](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-10/buster/Dockerfile)
-- [`2.7.6-9.11.2-1.22.4`, `2.7.5-9.11.2-1.22.4`](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-9/buster/Dockerfile)
-- [`2.7.6-8.17.0-1.22.4`, `2.7.5-8.17.0-1.22.4`, `2.7.4-8.17.0-1.22.4`, `2.7.3-8.17.0-1.22.4`,`2.7.2-8.17.0-1.22.4`, `2.7.1-8.17.0-1.22.4`](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-8/buster/Dockerfile)
 
 ## Image Variants
 
