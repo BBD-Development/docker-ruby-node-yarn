@@ -36,7 +36,7 @@ An example of using Ruby `2.7.7`, with Node `16.17.0` and Yarn `1.22.19` would b
 ## Supported tags and respective `Dockerfile` links
 
 - [`2.7.6-16.17.0-1.22.19`,`2.7.7-16.17.0-1.22.19`, `latest`](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-16/buster/Dockerfile)
-- [`2.7.6-14.20.0-1.22.19`](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-14/buster/Dockerfile)
+- [`2.7.6-14.20.0-1.22.19`,`2.7.7-14.20.0-1.22.19`](https://github.com/BBD-Development/docker-ruby-node-yarn/blob/master/2.7-14/buster/Dockerfile)
 
 ## Image Variants
 
